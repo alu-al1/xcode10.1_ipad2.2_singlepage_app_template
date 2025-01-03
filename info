@@ -1,0 +1,11 @@
+;;The solution to dyld_shared_cache_extract_dylibs failed for Xcode!;https://discussions.apple.com/thread/255530174
+;;https://stackoverflow.com/questions/54107715/dyld-shared-cache-extract-dylibs-failed-for-iphone-xs-max-running-ios-12-1-2
+;;https://github.com/iGhibli/iOS-DeviceSupport/issues/79
+;;https://stackoverflow.com/questions/7922308/xcode-4-2-error-0xc002-when-trying-to-use-a-jailbroken-iphone-3g-for-developmen/9944892#9944892
+
+
+## Rebuild dyld Cache on the Device
+(if jailbroken)
+### Use tools like idevice-dyld from the libimobiledevice suite.
+dyld_shared_cache_util -force -update_dyld_shared_cache
+

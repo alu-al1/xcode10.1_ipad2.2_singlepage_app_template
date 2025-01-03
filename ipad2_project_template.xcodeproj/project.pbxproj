@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3156159F2D27654400DF280F /* info in Resources */ = {isa = PBXBuildFile; fileRef = 3156159E2D27654300DF280F /* info */; };
 		315C17162D275E4A00DC91F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C17152D275E4A00DC91F1 /* AppDelegate.swift */; };
 		315C17182D275E4A00DC91F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 315C17172D275E4A00DC91F1 /* ViewController.swift */; };
 		315C171B2D275E4A00DC91F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 315C17192D275E4A00DC91F1 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3156159E2D27654300DF280F /* info */ = {isa = PBXFileReference; lastKnownFileType = text; path = info; sourceTree = "<group>"; };
 		315C17122D275E4A00DC91F1 /* ipad2_project_template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ipad2_project_template.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		315C17152D275E4A00DC91F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		315C17172D275E4A00DC91F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 		315C17092D275E4A00DC91F1 = {
 			isa = PBXGroup;
 			children = (
+				3156159E2D27654300DF280F /* info */,
 				315C17142D275E4A00DC91F1 /* ipad2_project_template */,
 				315C17132D275E4A00DC91F1 /* Products */,
 			);
@@ -96,11 +99,12 @@
 				TargetAttributes = {
 					315C17112D275E4A00DC91F1 = {
 						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 315C170D2D275E4A00DC91F1 /* Build configuration list for PBXProject "ipad2_project_template" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -122,6 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3156159F2D27654400DF280F /* info in Resources */,
 				315C17202D275E4D00DC91F1 /* LaunchScreen.storyboard in Resources */,
 				315C171D2D275E4D00DC91F1 /* Assets.xcassets in Resources */,
 				315C171B2D275E4A00DC91F1 /* Main.storyboard in Resources */,
@@ -272,8 +277,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -285,17 +289,18 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z9H5AB3ZQK;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
 				INFOPLIST_FILE = ipad2_project_template/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.alual1.ipad2-project-template";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 2;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -306,17 +311,18 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z9H5AB3ZQK;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
 				INFOPLIST_FILE = ipad2_project_template/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.alual1.ipad2-project-template";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 2;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};
